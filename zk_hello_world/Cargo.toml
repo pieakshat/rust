@@ -1,0 +1,13 @@
+[package]
+name = "zk_hello_world"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-std        = "0.5"          # common utilities
+ark-ff         = "0.5"          # finite-field traits
+ark-relations  = "0.5"          # R1CS abstractions
+ark-r1cs-std   = "0.5"          # ready-made gadgets
+ark-groth16    = "0.5"
+ark-bn254      = { version = "0.5", features = ["curve", "scalar_field", "r1cs"] }
+rand           = "0.8"
